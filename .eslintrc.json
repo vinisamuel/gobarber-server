@@ -23,12 +23,17 @@
     "prettier"
   ],
   "rules": {
+    "no-underscore-dangle": "off",
     "prettier/prettier": "error",
     "class-methods-use-this": "off",
     "@typescript-eslint/camelcase": "off",
+    // "import/prefer-default-export": "off",
+    // "import/no-unresolved": "off",
+    // "no-unused-expressions": "off",
     "@typescript-eslint/no-unuser-vars": ["error", {
       "argsIgnorePattern": "_"
     }],
+    // "@typescript-eslint/interface-name-prefix": ["error", { "prefixWithI": "always" }],
     "import/extensions": [
       "error",
       "ignorePackages",
