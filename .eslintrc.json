@@ -26,14 +26,27 @@
     "no-underscore-dangle": "off",
     "prettier/prettier": "error",
     "class-methods-use-this": "off",
-    "@typescript-eslint/camelcase": "off",
+    "camelcase": "off",
+    "no-useless-constructor": "off",
     // "import/prefer-default-export": "off",
     // "import/no-unresolved": "off",
     // "no-unused-expressions": "off",
-    "@typescript-eslint/no-unuser-vars": ["error", {
+    "@typescript-eslint/no-unused-vars": ["error", {
       "argsIgnorePattern": "_"
     }],
     // "@typescript-eslint/interface-name-prefix": ["error", { "prefixWithI": "always" }],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+          "selector": "interface",
+          "format": ["PascalCase"],
+          "prefix": ["I"]
+          // "custom": {
+          //     "regex": "^I[A-Z]",
+          //     "match": false
+          // }
+      }
+    ],
     "import/extensions": [
       "error",
       "ignorePackages",
